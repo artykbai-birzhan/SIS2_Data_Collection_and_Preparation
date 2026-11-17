@@ -1,0 +1,4 @@
+schema_context,column,check,check_number,failure_case,index
+Column,vin,str_matches('^[A-HJ-NPR-Z0-9]{17}$'),0,INVALID,2
+Column,make,isin(['Toyota']),0,Honda,1
+Column,price,greater_than(0),0,-1.0,0

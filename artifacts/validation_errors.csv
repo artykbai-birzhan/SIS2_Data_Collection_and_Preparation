@@ -1,0 +1,7 @@
+schema_context,column,check,check_number,failure_case,index
+Column,fair_market_price,greater_than(0),0,0.0,70
+Column,fair_market_price,greater_than(0),0,0.0,195
+Column,fair_market_price,greater_than(0),0,0.0,196
+Column,fair_market_price,greater_than(0),0,0.0,200
+Column,fair_market_price,greater_than(0),0,0.0,201
+Column,fair_market_price,greater_than(0),0,0.0,203

@@ -1,0 +1,120 @@
+{
+  "collected_api_records": 250,
+  "published_kafka_messages": 250,
+  "consumed_kafka_messages": 250,
+  "valid_records": 244,
+  "invalid_records": 6,
+  "records_before_cleaning": 244,
+  "duplicate_records_removed": 0,
+  "records_after_cleaning": 244,
+  "attractive_below_market_records": 74,
+  "sqlite_records_after_first_load": 244,
+  "sqlite_records_after_second_load": 244,
+  "sqlite_digest_unchanged": true,
+  "deliberately_invalid_test_records_detected": 3,
+  "duplicate_demo_rows_added": 3,
+  "duplicate_demo_rows_removed": 3,
+  "missing_values": {
+    "trim": 4,
+    "transmission": 2,
+    "deal_rating": 14
+  },
+  "eda": {
+    "records_analyzed": 244,
+    "mean_listing_price": 33172.68,
+    "mean_fair_market_price": 33863.3,
+    "median_difference_pct": -1.99,
+    "pricing_status_counts": {
+      "near_market": 119,
+      "below_market": 95,
+      "above_market": 30
+    },
+    "model_count": 20
+  },
+  "database_verification": {
+    "stored_records": 244,
+    "pricing_status_summary": [
+      {
+        "pricing_status": "above_market",
+        "n": 30,
+        "avg_pct": 10.37
+      },
+      {
+        "pricing_status": "below_market",
+        "n": 95,
+        "avg_pct": -6.33
+      },
+      {
+        "pricing_status": "near_market",
+        "n": 119,
+        "avg_pct": -0.54
+      }
+    ]
+  },
+  "sql_verification_file": {
+    "1. Total stored records": [
+      {
+        "stored_records": 244
+      }
+    ],
+    "2. Primary key uniqueness (must return 0 duplicated ids)": [
+      {
+        "duplicated_listing_ids": 0
+      }
+    ],
+    "3. Listings by pricing status": [
+      {
+        "pricing_status": "above_market",
+        "n": 30,
+        "avg_pct": 10.37
+      },
+      {
+        "pricing_status": "below_market",
+        "n": 95,
+        "avg_pct": -6.33
+      },
+      {
+        "pricing_status": "near_market",
+        "n": 119,
+        "avg_pct": -0.54
+      }
+    ],
+    "4. Top 5 models by number of listings": [
+      {
+        "model": "Camry",
+        "n": 37,
+        "avg_price": 28321.0
+      },
+      {
+        "model": "RAV4",
+        "n": 36,
+        "avg_price": 29042.0
+      },
+      {
+        "model": "Tacoma",
+        "n": 25,
+        "avg_price": 34275.0
+      },
+      {
+        "model": "Sienna",
+        "n": 21,
+        "avg_price": 39710.0
+      },
+      {
+        "model": "Highlander",
+        "n": 20,
+        "avg_price": 27410.0
+      }
+    ],
+    "5. Invalid values check (must return 0)": [
+      {
+        "rows_with_nonpositive_price": 0
+      }
+    ],
+    "6. Test records must not be stored (must return 0)": [
+      {
+        "test_records_in_db": 0
+      }
+    ]
+  }
+}

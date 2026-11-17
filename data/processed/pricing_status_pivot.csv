@@ -1,0 +1,21 @@
+model,above_market,below_market,near_market
+4Runner,1,9,6
+Avalon,0,1,0
+Bz4X,0,1,1
+C-Hr,0,1,1
+Camry,4,12,21
+Corolla,2,4,10
+Corolla Cross,2,3,6
+FJ Cruiser,2,1,0
+GR86,0,0,2
+Grand Highlander,0,4,5
+Highlander,3,7,10
+Land Cruiser,0,2,2
+Prius,4,0,7
+Prius Prime,0,0,1
+RAV4,6,15,15
+Sequoia,0,5,5
+Sienna,1,17,3
+Supra,1,0,0
+Tacoma,3,6,16
+Tundra,1,7,8

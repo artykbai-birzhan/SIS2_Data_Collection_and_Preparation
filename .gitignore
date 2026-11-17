@@ -4,10 +4,4 @@
 __pycache__/
 .pytest_cache/
 *.py[cod]
-data/raw/*.jsonl
-data/processed/*.csv
-data/*.db
-figures/*.png
-artifacts/*
-!artifacts/.gitkeep
-
+.DS_Store
